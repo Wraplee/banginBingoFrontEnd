@@ -114,3 +114,10 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
+.bingo p {
+  font-size: 40px;
+}
+.header {
+  font-size: 40px;
+}

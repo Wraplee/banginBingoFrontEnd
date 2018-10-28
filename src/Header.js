@@ -27,9 +27,8 @@ header:true
           </div>
           </div>
           <ul className="header">
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Bangin' Bankin' Bingo</a></li>
             <li><a href="/Transactions">Transactions</a></li>
-            <li><a href="/Payment">Payment</a></li>
           </ul>
 
 </div>

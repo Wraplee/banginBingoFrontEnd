@@ -83,20 +83,20 @@ class Bingo extends Component {
     }
     
     componentWillMount(){
-    fetch('/tasks/update/5bd44f84322fa06b67793e85', {mode: 'no-cors'})
+    fetch('/tasks/update/5bd44f84322fa06b67793e86', {mode: 'no-cors'})
     .then(results=>{
         return results.json();
     }).then(data=>{
         console.log(data)
         this.setState({tasks: data})
-        this.isBingo(data)
+        this.isBingo(this.state.tasks)
     })
 
     }
 
     
     isitTrue = (task) =>{
-      return task.status ===true
+      return task.status ==="true"
     }
     
     isBingo = (tasks) =>{
@@ -125,6 +125,7 @@ class Bingo extends Component {
     
         return (
           <div className="bingo">
+                    <p>Match all of the tasks to win a prize!</p>
           <div class = "Grid-Container">
           {row}
           </div>
